@@ -25,12 +25,14 @@ public class ModeRecyclerAdapter extends RecyclerView.Adapter<ModeRecyclerAdapte
         switch (holder.getItemViewType()) {
             case TOP:
                 holder.addRectangleTo("bottom");
+                holder.binding.textView.setText("San Francisco");
                 return;
             case MIDDLE:
                 holder.addRectangleTo("stretch");
                 return;
             case BOTTOM:
                 holder.addRectangleTo("top");
+                holder.binding.textView.setText("San Jose");
         }
     }
 

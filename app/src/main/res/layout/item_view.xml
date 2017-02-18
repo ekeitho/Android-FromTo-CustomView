@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:bind="http://schemas.android.com/tools">
+
     <data>
+
         <variable
             name="mode"
-            type="java.lang.String"/>
+            type="java.lang.String" />
     </data>
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="28dp"
+        android:layout_height="56dp"
         android:orientation="horizontal">
 
         <com.ekeitho.from_to.CircleSquare
-            bind:mode="@{mode}"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="32dp" />
+            android:layout_marginStart="32dp"
+            bind:mode="@{mode}" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical" />
     </LinearLayout>
 </layout>
